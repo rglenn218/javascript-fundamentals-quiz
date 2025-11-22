@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- PAGE HEADER -->
+    <h1>JavaScript Fundamentals Quiz</h1>
+
+    <!-- QUIZ CONTAINER -->
+    <div class="quiz-container">
+        <!-- Question will be dynamically populated here -->
+        <h2 id="question">Question text</h2>
+        <div id="answer-buttons" class="option-buttons">
+            <!-- Answer buttons will be dynamically populated here -->
+            <!-- "onclick" calls selectAnswer function with the index of the selected answer -->
+            <button class="option" onclick="selectAnswer(0)">Answer 1</button>
+            <button class="option" onclick="selectAnswer(1)">Answer 2</button>
+            <button class="option" onclick="selectAnswer(2)">Answer 3</button>
+            <button class="option" onclick="selectAnswer(3)">Answer 4</button>
+    </div>
+
+    <!-- NAVIGATION BUTTONS -->
+     <!-- "onclick" calls nextQuestion function to go to the next question -->
+    <button id="next-btn" onclick="nextQuestion()">Next</button>
+    <h3 id="score">Score: 0</h3>
+    <!-- "onclick" calls restartQuiz function to restart the quiz -->
+    <button id="restart-btn" onclick="restartQuiz()" style="display: none;">Restart</button> 
+    </div>
+
+    <!-- JAVASCRIPT FILE -->
+    <script src="app.js"></script>
+</body>
+</html>
